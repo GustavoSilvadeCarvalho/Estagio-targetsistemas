@@ -5,7 +5,7 @@ with open('faturamento.json', 'r') as file:
 
 faturamento_diario = data['faturamento_diario']
 
-faturamento_valido = [valor for valor in faturamento_diario if valor > 0]
+faturamento_valido = [dia["valor"] for dia in faturamento_diario if dia["valor"] > 0]
 menor_faturamento = min(faturamento_valido)
 maior_faturamento = max(faturamento_valido)
 media_mensal = sum(faturamento_valido) / len(faturamento_valido)
