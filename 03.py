@@ -14,8 +14,3 @@ dias_acima_da_media = len([valor for valor in faturamento_valido if valor > medi
 print(f"Menor valor de faturamento: {menor_faturamento}")
 print(f"Maior valor de faturamento: {maior_faturamento}")
 print(f"Número de dias com faturamento acima da média: {dias_acima_da_media}")
-
-# Resultados:
-# Menor valor de faturamento: 100
-# Maior valor de faturamento: 8000
-# Número de dias com faturamento acima da média: 14
